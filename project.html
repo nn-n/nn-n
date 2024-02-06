@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset default margin and padding */
+    body, h4, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Apply font and sizing to h1, p, and a */
+    h4, p, a {
+      font-family: 'Helvetica', sans-serif;
+      font-size: clamp(1rem, 3vw, 7rem);
+      color: rgb(255, 255, 255);
+      padding: 0rem clamp(1rem, 2vw, 3rem);
+      border-radius: clamp(0.4rem, 0.75vw, 1rem);
+      text-align: left; /* Left-align text content */
+    }
+
+    /* Center the content vertically and horizontally */
+    .content-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+      background-color: rgb(0, 0, 0);
+      margin: 1rem 0; /* Add margin to separate content sections */
+    }
+
+    .project-description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 2rem; /* Adjust this value to push the text more to the right */
+      width: 35%; /* Adjust this to your preference */
+    }
+
+    .aRight {
+      text-align: right;
+      font-size: clamp(1rem, 1vw, 3rem);
+    }
+
+    /* Apply styles to the image */
+    .image-container {
+      width: 80%; /* Adjust this to give more space to the image */
+      max-width: 800px;
+      display: grid; /* Apply grid to the image container */
+      place-items: left; /* Left-align content within the image container */
+    }
+
+    .forced-image {
+      width: 100%; /* Make the image fill the container width */
+      height: auto; /* Automatically adjust the height to maintain aspect ratio */
+      max-height: 700px; /* Set a maximum height for the image */
+    }
+
+    /* No underline in a or nav link tag */
+    a {
+      text-decoration: none;
+      font-size: clamp(1rem, 3vw, 5rem);
+    }
+
+    /* Style for visited links */
+    a:visited {
+      color: white; /* Set the color you want for visited links */
+      text-decoration: none; /* Remove underline */
+    }
+
+    /* Selection color */
+    ::selection {
+      background-color: #6161615d; /* Change this to the desired highlight color */
+      color: #fff; /* Change this to the desired text color within the highlight */
+    }
+
+    img {
+      width: 100%; /* Set the image width to 100% of its container */
+      height: 500px;
+      object-fit: cover; /* Scale the image to cover the entire container while preserving aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <div id="left-side" class="side">
+    <h2 class="title">
+     <a href="index.html"><h6 data-value="back">back</h6>
+     </a> 
+    </h2>
+  </div>
+  
+  <div class="content-container">
+    <div class="image-container">
+      <img src="tech/reactor.jpg">
+    </div>
+    <div class="project-description">
+      <h4>SARA</h4>
+      <p>Speech-Assisted Resource Assistant (SARA) is an innovative speech-to-text search 
+        bot that introduces a new level of convenience and efficiency to users' digital interactions. With SARA, users can harness 
+        the power of their own voice to effortlessly search for information both within their computer and across the internet. This
+         technology enables a seamless integration of natural language and technology, enabling users to simply articulate their queries
+          or topics of interest, eliminating the need for manual typing or intricate navigation.</p>
+      <a class="aRight" href="https://github.com/nn-n/SARA">updates on SARA</a>
+    </div>
+  </div>
+ 

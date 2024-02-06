@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111; /* Set your background color */
+}
+
+#rotating-sphere {
+    font-family: monospace;
+    font-size: 8px; /* Adjust the font size */
+    color: #fff4e6; /* Cream color */
+}

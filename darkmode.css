@@ -1,0 +1,204 @@
+
+body {
+    height:100vh;
+    width:100vw;
+    margin: 0rem;
+    padding: 40px;
+    font-family: 'Helvetica', sans-serif;
+   /*  background: url("back.jpg") center/cover no-repeat; */
+    color: #333;
+    background-position: bottom; 
+    background-color: #000000;
+    
+  }
+  
+  nav{  
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold; 
+    font-size: 1rem;
+    display: flex;
+    justify-content: center; /* Center-align items horizontally */
+    gap: 20px; /* Add some spacing between the links */
+  
+  }
+
+  h2 {
+    color:rgba(255, 255, 255, 0);
+  }
+  
+  .navWorks{
+    display: flex;
+    justify-content: center; /* Center-align items horizontally */
+    gap: 20px; /* Add some spacing between the links */
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header, nav, section, footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header, nav, section, footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+  }
+  
+  section {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    margin-top: auto;
+  }
+  
+  .project {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+  
+  /* Image rotation */
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides-container {
+    display: flex;
+    animation: slide 15s linear infinite;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: row; /* Display images side by side */
+    width: 200%; /* Double the width to accommodate two images */
+    transition: transform 1s linear; /* Animation transition */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Move the slide container left by half of its width */
+    }
+  }
+  
+  
+  
+  
+  
+  /*forced img */
+  .image-container {
+    width: 500px;
+    max-width: 500px;
+  }
+  
+  .forced-image {
+    width: 500px;
+    height: 500;
+    max-height: 500px;
+  }
+  
+  
+  
+  
+  /* img roll */
+  #img-roll> .image{
+    width: 40vmin;
+    height: 50vmin;
+    object-fit: cover;
+    object-position:center ;
+  }
+  #img-roll{
+    display: flex;
+    gap: 4vmin;
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  
+  
+  /* no underline in a or nav link tag */
+  a {
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+  }
+  
+  /* Style for visited links */
+  a:visited {
+    color: #333; /* Set the color you want for visited links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  
+  /* Center align anchor tags horizontally */
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+  
+  }
+  
+  /* about me p tag */
+  .about{
+  font-size: 16px;
+  color: #333;
+  }
+  
+  
+  
+  /* this is for the selection color */
+  ::selection {
+    background-color: #6161615d; /* Change this to the desired highlight color */
+    color: #fff; /* Change this to the desired text color within the highlight */
+  }
+  
+  
+  /* Apply Helvetica font to specific list items */
+  ul.nav-list li {
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+
+
+  /*this is for the back button */
+  .side{
+    color:#fff;
+  }
+  
